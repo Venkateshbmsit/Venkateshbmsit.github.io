@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Venkatesh R K</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- bootstrap css cdn link  -->
+    <link
+    
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+              <div class="about-popup">
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+          <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" id="scrollToContact">Contact</button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Venkatesh R K</span>
+          </h2>
+          <p class="text-muted">
+            <strong>I am a dedicated and passionate software and backend developer, eager to apply my skills in designing and building
+            robust backend systems to contribute to innovative and impactful projects.</strong>
+          </p>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/banner-01.webp" class="img-fluid" alt="Venkatesh" />
+        </div>
+      </div>
+    </section>
+    
+  
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <h3>
+            I am a backend developer and <br />
+            developed some wide range of projects <br />
+        </h3>
+    </div>
+    
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development </h4>
+              <p class="text-muted">
+                Combining cutting-edge design trends with
+                 creative solutions to deliver a unique and memorable digital presence.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Mobile application</h4>
+              <p class="text-muted">
+                Designing user-friendly 
+                mobile apps that provide seamless navigation and an engaging user experience.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Backend Development</h4>
+              <p class="text-muted">
+                Quick to learn and adapt to new backend 
+                technologies, with hands-on experience in database management and API development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- Add Font Awesome CDN link in your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<section class="skill mt-5 py-5" id="skills">
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <!-- HTML & CSS -->
+            <div class="tech1"><h3>My Skills</h3></div> 
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up">
+                <div class="skill-card text-center p-4 border rounded shadow-sm">  
+                  <div class="skill-logo html-css-logo">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h4 class="mt-3">HTML & CSS</h4>
+                    <p class="text-muted">Creating responsive and visually appealing web pages.</p>
+                </div>
+            </div>
+            <!-- JavaScript -->
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-card text-center p-4 border rounded shadow-sm">
+                    <div class="skill-logo javascript-logo">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h4 class="mt-3">JavaScript</h4>
+                    <p class="text-muted">Building interactive and dynamic web experiences.</p>
+                </div>
+            </div>
+            <!-- Java -->
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-card text-center p-4 border rounded shadow-sm">
+                    <div class="skill-logo java-logo">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h4 class="mt-3">Java</h4>
+                    <p class="text-muted">Developing robust server-side applications.</p>
+                </div>
+            </div>
+            <!-- SQL -->
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-card text-center p-4 border rounded shadow-sm">
+                    <div class="skill-logo sql-logo">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4 class="mt-3">SQL</h4>
+                    <p class="text-muted">Managing and querying relational databases efficiently.</p>
+                </div>
+            </div>
+            <!-- Oracle DB -->
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-card text-center p-4 border rounded shadow-sm">
+                    <div class="skill-logo oracle-db-logo">
+                        <i class="fas fa-database"></i> <!-- Use specific Oracle icon if available -->
+                    </div>
+                    <h4 class="mt-3">Oracle DB</h4>
+                    <p class="text-muted">Designing and managing enterprise-level databases.</p>
+                </div>
+            </div>
+            <!-- MongoDB -->
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="skill-card text-center p-4 border rounded shadow-sm">
+                    <div class="skill-logo mongodb-logo">
+                        <i class="fas fa-database"></i> <!-- Use specific MongoDB icon if available -->
+                    </div>
+                    <h4 class="mt-3">MongoDB</h4>
+                    <p class="text-muted">Working with NoSQL databases for flexible data models.</p>
+                </div>
+            </div>
+            <!-- Node.js -->
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="skill-card text-center p-4 border rounded shadow-sm">
+                    <div class="skill-logo nodejs-logo">
+                        <i class="fab fa-node"></i>
+                    </div>
+                    <h4 class="mt-3">Node.js</h4>
+                    <p class="text-muted">Developing scalable server-side applications.</p>
+                </div>
+            </div>
+            <!-- TypeScript -->
+            <div class="col-10 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <div class="skill-card text-center p-4 border rounded shadow-sm">
+                    <div class="skill-logo typescript-logo">
+                        <i class="fab fa-js-square"></i> <!-- Use TypeScript specific icon if available -->
+                    </div>
+                    <h4 class="mt-3">TypeScript</h4>
+                    <p class="text-muted">Enhancing JavaScript with static types for better development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+        <!-- Skills Detail -->
+        <section class="skill mt-5 py-5" id="skills">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-10 col-md-6 skill-detail text-center mx-auto" data-aos="fade-up">
+                <div class="heading mt-5 mt-md-3">
+                  
+                  <h3 class="heading-title">Beautiful & Unique Digital Experiences</h3>
+                  <p class="text-muted heading-description">
+                    I upgraded my skills and I have attached my resume with my educational details and projects,
+                    Internship
+                  </p>
+                  <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                    <a href="VENKATESH_KULKARNI_.pdf" download="SampleCV" class="download-link">Download CV</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+   
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Tic Tak Toe</button>
+        <button class="filter-item" data-filter="webapp">Rock Paper Scissors</button>
+        <button class="filter-item" data-filter="website">Password Generator</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/Tictok.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Tic Tac Toe Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/passwordgenerator.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Password Generator</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/STP.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Stone Paper Scissors</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+              </div>
+            </div>
+          </div>
+        </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small> </small>
+        <h3>Major Projects </h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/Aqualife.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Venkatesh R K </small
+              ><span class="ms-3">Mar 8,2021</span>
+              <h4 class="card-title">
+                <a href="">AQUALIFE - Mobile Application</a>
+              </h4>
+              <p class="text-muted">
+                This is the Mobile Application for Delivering Drinkings Water Cans</p><br/>
+                Situations like - Covid , This Application helps a lot  
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/EC-IoT-Internet-of-Things-750.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>Venkatesh R K </small
+              ><span class="ms-3">2023</span>
+              <h4 class="card-title">Adulteration and Decection Using IOT
+                <a href="">“Food ”
+                </a>
+              </h4>
+              <p class="text-muted">
+                This is IOT Project, Where we can justify the purity of Food </p>
+                For Example - We considered Milk as Example and Studied the Purity of Milk 
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/expense-tracker-vector-icon-logo-260nw-2456503511.png"
+              class="card-img-top rounded-4 card-img-small"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Venkatesh R K </small><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Expense Tracker Backend-APP</a>
+              </h4>
+              <p class="text-muted">
+               This is a Expense Tracker Bacnend to Calculate the Expenses
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/Aqualife.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>Venkatesh R K</small
+                    ><span class="text-muted ms-2">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Mobile Application for Delivering Drinking Water Cans</h4>
+                  <p class="text-muted mt-3">Access to clean water is a critical issue in many parts of India,
+                    with 40% of the population lacking freshwater as per the United Nations.
+                     In Bagalkot, the Krishna and Ghataprabha rivers are heavily polluted, 
+                     forcing people to rely on fluoride-contaminated borewell water.
+                      While water purification plants are being established,
+                       there is no effective platform for delivering clean water. 
+                       This project aims to address this problem by providing cost-effective,
+                        timely, and hygienic doorstep delivery of pure drinking water, helping people overcome
+                         challenges like transportation, time constraints, and pollution.</p>
+                </div>
+              </div>        
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/EC-IoT-Internet-of-Things-750.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Venkatesh R K </small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">IOT Project to Check the Purity Of Food</h4>
+                  <p class="text-muted mt-3">Adulteration degrades food quality by adding harmful substances, 
+                    making it challenging for consumers to detect. 
+                    Current detection methods are complex, expensive, and often require laboratory settings.
+                     This paper proposes a cost-effective, portable IoT sensor for real-time detection of adulterants,
+                      such as papaya seeds in pepper. In India, nearly 25% of food samples analyzed in 2017-18 were found to be adulterated, 
+                      highlighting the urgency of effective detection. Milk, a common target for adulteration due to its nutrient value, faces significant challenges with both qualitative and quantitative detection methods. 
+                      The motivation for food fraud often stems from economic factors, posing serious public health risks, especially in developing regions.</p>
+                </div>
+              </div>     
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/expense-tracker-vector-icon-logo-260nw-2456503511.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Venkatesh R K</small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">A Basic Backend Expense Tracker -APP</h4>
+                  <p class="text-muted mt-3">An Expense Tracker App is a powerful tool designed to help users efficiently manage their personal
+                     or business finances. It allows individuals to record daily expenses, categorize them, 
+                     and monitor spending habits. By setting budget limits and tracking spending against those limits, 
+                     users can gain insights into where their money is going. 
+                     The app typically includes features like generating reports, providing visual analytics, and setting up recurring expenses for regular payments. 
+                     With the ability to manage finances on-the-go, 
+                    the Expense Tracker App promotes better financial discipline and long-term savings.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+  
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Testimonials/References</small>
+            <h3>Happy Learning</h3>
+            <!-- here we will use carousel element from bootstrap -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Technology like art is a soaring 
+                        exercise of the human imagination...
+                      </p>
+                      <h4> Daniel Bell</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Let’s go invent tomorrow instead of worrying 
+                        about what happened yesterday...
+                      </p>
+                      <h4>Steve Jobs</h4>
+                      <small class="fs-6 text-muted">CEO of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        The great myth of our times is that technology is communication.
+                      </p>
+                      <h4>Libby Larsen</h4>
+                      <small class="fs-6 text-muted">Composer</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <h2 class="head1">Get in Touch</h2>
+        <h2 class="head2">Any Questions? Feel Free to Contact</h2>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-8 contact-box" data-aos="slide-up">
+          <div class="row">
+            <div class="col-12 contact-details">
+              <div class="row align-items-center mb-3">
+                <div class="col-2">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="col-10">
+                  <p>Bangalore</p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-3">
+                <div class="col-2">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="col-10">
+                  <p>+91 9380038205</p>
+                </div>
+              </div>
+              <div class="row align-items-center mb-3">
+                <div class="col-2">
+                  <i class="bi bi-send-fill"></i>
+                </div>
+                <div class="col-10">
+                  <p>venkateshkulkarni8951@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+      <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+      style="display: none;"  
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <a href="https://wa.me/9380038205" class="social-btn rounded-pill whatsapp" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://discord.com/1262672446922686552" class="social-btn rounded-pill discord" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-discord"></i>
+        </a>
+        <a href="https://github.com/Venkateshbmsit" class="social-btn rounded-pill github" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/venkateshkulkarni5" class="social-btn rounded-pill linkedin" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        
+      </div>
+      <hr class="text-muted my-4" />
+      
+
+      <p>Copyright 2024 Venkatesh Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>

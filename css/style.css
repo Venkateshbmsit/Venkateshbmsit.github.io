@@ -1,0 +1,787 @@
+/* appling google font over the website  */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+/* styling menu icon */
+.nav-menu{
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #f5a31e;
+}
+/* styling navbar links  */
+.navbar-nav a{
+    color: black;
+    position: relative;
+}
+.navbar-nav a:hover{
+    color: #fca61f;
+}
+.navbar-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #fca61f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  /* styling contact btn  */
+.c-btn{
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+}
+/* styling home section starts */
+.home{
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    padding: 30px 0px 10px 0px;
+}
+.home h2{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.c-orange{
+    color: #6f34fe;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.home p{
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.h-btn:hover{
+    background: #6f34fe;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;
+}
+.link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #6f34fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.link:hover{
+    color: #6f34fe;
+}
+.link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* adding animation to home section image  */
+.home img{
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-24px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* expertise section starts */
+.heading small{
+    color: #824dff;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.heading h3{
+    margin-top: 0.5rem;
+    color: #3f396d;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.expertise h4{
+    color: #3f396d;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.expertise a{
+    text-decoration: none;
+    color: #fca61f;
+}
+.expertise a:hover{
+    color: #6f34fe;
+}
+.expertise .service-card{
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 0.7rem;
+}
+
+/* skill section starts */
+.skill{
+    background-color: rgb(234, 234, 249);
+}
+.progress-card{
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+}
+.progress-card:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+}
+.circular-progress{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.html-progress{
+    color: #fca61f;
+}
+.javascript-progress{
+    color: #6f34fe;
+}
+.php-progress{
+    color: #20c997;
+}
+.reactjs-progress{
+    color: #3f396d;
+}
+.text{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.heading p{
+    font-size: 1.3rem;
+}
+
+/* portfolio section starts */
+#myBtnContainer{
+    margin-bottom: 45px;
+}
+#myBtnContainer button{
+  border: none;
+  color: black;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;   
+  display: inline-block;
+  margin: 0 25px;
+}
+#myBtnContainer button:hover{
+    color: #fca61f;
+}
+
+#myBtnContainer button:focus{
+    outline: none;
+}
+.post .content h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.post .card{
+    border: none;
+}
+
+/* testimonial section starts */
+.testimonial img:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 1s;
+}
+.testimonial h4{
+    color: #3f396d;
+}
+.testimonial i{
+    font-size: 2.9rem;
+    color: #fca61f;
+    
+}
+.testimonial .nextprev-btn{
+    border: none;
+    background-color: #fff;
+}
+.prev:hover,.prev-btn:hover{
+    color:#6f34fe;
+    transform: translateX(-10px);
+    transition-duration: 1s;
+}
+.next:hover,.next-btn:hover{
+    color:#6f34fe;
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+
+/* blog section starts */
+.blog{
+    background-color: #f2f2ff;
+}
+.blog .blogpost .card{
+    border: none;
+    border-radius: 5%;
+}
+.nav-bg{
+    background-color: #fff;
+}
+
+.blog .blogpost small{
+    color: #6f34fe;
+    font-size: 1.1rem;
+}
+.blog .blogpost h4,.blogpost a{
+    color: #3f396d;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.blogpost a:hover{
+    color: #fca61f;
+}
+.blog .blogpost .read-more-btn{
+    text-decoration: none;
+    color: #fca61f;
+    font-size: 1.1rem;
+}
+.blog .blogpost .read-more-btn:hover{
+    color: #6f34fe;
+}
+/* styling modal group  */
+.btn-c{
+    margin-left: 94%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: -3%;
+}
+.btn-c i{
+    color: #fca61f;
+}
+.modal-body .content span{
+    font-size: 1rem;
+}
+.modal-body .content small{
+    font-size: 1rem;
+    color: #6f34fe;
+}
+/* contact section starts */
+.contact{
+    background-color: #f3f3f3;
+}
+.contact-details i{
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+.contact-details p{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.contact-form .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #fca61f;
+}
+.contact-form .form-control{
+    padding: 10px 10px;
+    width: 80%;
+}
+
+/* footer section starts */
+footer{
+    background-color: #211e39;
+}
+
+footer .link-group a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+footer .link-group a:hover{
+    color: #fca61f;
+}
+.social-links button{
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+}
+.social-links .dribble{
+    color: #f33a7e;
+}
+.social-links button:hover{
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.social-links .dribble:hover{
+    background-color: #f33a7e;
+}
+.social-links .whatsapp{
+    color: #25D366;
+}
+.social-links .whatsapp:hover{
+    background-color: #25D366;
+}
+.social-links .behance{
+    color: #255afc;
+}
+.social-links .behance:hover{
+    background-color: #255afc;
+}
+
+/* styling back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #fca61f;
+    color: #fff;
+    animation: pulse 3s infinite;
+}
+.skill-card {
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+
+.skill-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+}
+
+.html-css-logo i {
+    color: #e44d26; /* HTML color */
+}
+
+.html-css-logo i:nth-of-type(2) {
+    color: #1572b6; /* CSS color */
+}
+
+.javascript-logo i {
+    color: #f7df1e;
+}
+
+.java-logo i {
+    color: #f89820;
+}
+
+.sql-logo i {
+    color: #003b6f;
+}
+
+.oracle-db-logo i {
+    color: #f80000;
+}
+
+.mongodb-logo i {
+    color: #47a248;
+}
+
+.nodejs-logo i {
+    color: #68a063;
+}
+
+.typescript-logo i {
+    color: #007acc;
+}
+.contact {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+}
+
+.contact-box {
+    background-color: #ffffff; /* White background for the box */
+    border: 2px solid #000000; /* Light border around the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px; /* Max width of the box */
+    margin: 0 auto; /* Center align the box */
+}
+
+.contact-details i {
+    font-size: 1.5rem; /* Increase icon size */
+    color: #db3434; /* Change icon color */
+}
+
+.contact-details p {
+    font-size: 1rem; /* Adjust font size */
+    color: #333; /* Dark color for text */
+    margin: 0; /* Remove default margin */
+}
+
+.heading h3 {
+    font-size: 1.75rem; /* Adjust heading font size */
+    color: #333; /* Dark color for heading */
+}
+
+.heading small {
+    display: block; /* Make the small text appear above the heading */
+    font-size: 2.875rem; /* Smaller font size for the small text */
+    color: #2c37ff; /* Slightly lighter color for the small text */
+}
+
+.row.align-items-center {
+    align-items: center; /* Center align items vertically */
+}
+.heading text-center{
+    text-align: center;
+    font-size:2.75rem ;
+}
+
+.skill {
+    background-color: #f4f4f4; /* Light background color for the section */
+    padding: 40px 0; /* Padding top and bottom */
+}
+
+.skill .heading {
+    padding: 20px;
+}
+
+.heading-small {
+    display: block; /* Display the small text above the heading */
+    font-size: 1rem; /* Slightly larger font size for the small text */
+    color: #6c757d; /* Gray color for the small text */
+    margin-bottom: 10px; /* Margin below the small text */
+}
+
+.heading-title {
+    font-size: 2.5rem; /* Large font size for the title */
+    color: #333; /* Dark color for the title text */
+    margin-bottom: 20px; /* Margin below the title */
+    font-weight: bold; /* Bold font weight for emphasis */
+}
+
+.heading-description {
+    font-size: 1.1rem; /* Larger font size for the description */
+    color: #555; /* Medium color for the description text */
+    margin-bottom: 30px; /* Margin below the description */
+}
+
+.c-btn.h-btn {
+    background-color: #3498db; /* Background color for the button */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Rounded edges for the button */
+    color: #fff; /* White text color */
+    font-size: 1rem; /* Font size for the button text */
+    font-weight: bold; /* Bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.c-btn.h-btn:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+}
+
+.download-link {
+    text-decoration: none; /* Remove underline from the link */
+    color: #fff; /* White text color */
+}
+.social-links {
+    display: flex;
+    justify-content: center; /* Center align the social buttons */
+    gap: 15px; /* Space between social buttons */
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    background-color: #fff; /* Background color of the button */
+    border: 2px solid #ddd; /* Border color */
+    border-radius: 50%; /* Round button */
+    color: #333; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.social-btn:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: #000; /* Icon color on hover */
+}
+
+.dribble {
+    border-color: #ea4c89; /* Custom border color for Dribbble */
+    color: #ea4c89; /* Custom icon color for Dribbble */
+}
+
+.whatsapp {
+    border-color: #25d366; /* Custom border color for WhatsApp */
+    color: #25d366; /* Custom icon color for WhatsApp */
+}
+
+.behance {
+    border-color: #ff0101; /* Custom border color for Behance */
+    color: #1769ff; /* Custom icon color for Behance */
+}
+
+.discord {
+    border-color: #7289da; /* Custom border color for Discord */
+    color: #7289da; /* Custom icon color for Discord */
+}
+
+.github {
+    border-color: #333; /* Custom border color for GitHub */
+    color: #333; /* Custom icon color for GitHub */
+}
+
+.linkedin {
+    border-color: #0077b5; /* Custom border color for LinkedIn */
+    color: #0077b5; /* Custom icon color for LinkedIn */
+}
+.card-img-small {
+    width: 100%; /* You can adjust this to make the image smaller */
+    height: auto; /* Keeps the image aspect ratio */
+    max-height: 350px; /* You can control the max height of the image */
+    object-fit: cover; /* Ensures the image is cropped properly */
+  }
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 30px; /* Adjust as needed */
+    right: 30px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+.head1{
+    font-size: 1.5rem; /* Increase icon size */
+    color: #ff0000; /* Change icon color */
+}
+.head2{
+    font-size: 1.5rem; /* Increase icon size */
+    color: #430a7c; /* Change icon color */
+}
+.c-btn {
+    background-color: #3f396d; /* Change to your preferred color */
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.c-btn:hover {
+    background-color: #ff7f50; /* Change to a hover color */
+}
+.hire-me-btn {
+    display: inline-block;
+    background-color: #3f396d; /* Button background color */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Padding for button shape */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    text-align: center;
+}
+
+.hire-me-btn:hover {
+    background-color: #ff7f50; /* Hover background color */
+}
+.heading small {
+    font-size: 1.2rem; /* Adjust small text size */
+    color: rgb(70, 60, 210); /* Optional: change color of small text */
+}
+
+.heading h3 {
+    font-size: 2.5rem; /* Increase the size of h3 text */
+    font-weight: bold; /* Make it bold */
+    line-height: 1.5; /* Increase line height for better readability */
+    color: #3f396d; /* Optional: change text color */
+}
+.Skills1{
+    font-size: 1.2rem;
+    color: #3f396d; /* Optional: change text color */
+}
+.tech1{
+    font-size: 0.5rem;
+    color: #1d00f8; /* Optional: change text color */
+    text-align: center;
+}
+/* Overall font settings */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a clean, professional font */
+}
+
+/* Headings Styling */
+.heading .head1 {
+    font-size: 2.5rem;  /* Larger, impactful heading */
+    font-weight: 700;   /* Make it bold */
+    color: #3f396d;     /* Darker color */
+}
+
+.heading .head2 {
+    font-size: 1.8rem;  /* Slightly smaller than the main heading */
+    font-weight: 400;   /* Normal weight */
+    color: #777777;     /* Muted color for secondary heading */
+}
+
+/* Contact Box Styling */
+.contact-box {
+    background-color: #f9f9f9;  /* Light background for contrast */
+    border-radius: 10px;        /* Rounded corners for a softer look */
+    padding: 30px;              /* Space inside the box */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Contact Details */
+.contact-details p {
+    font-size: 1.1rem;      /* Make the text slightly bigger */
+    color: #555;            /* Darker color for legibility */
+    font-weight: 400;       /* Regular font weight */
+    margin-bottom: 0;       /* Remove bottom margin for tighter layout */
+}
+
+/* Icons Styling */
+.contact-details i {
+    font-size: 1.5rem;      /* Larger icon size */
+    color: #3f396d;         /* Same color as the headings */
+    margin-right: 10px;     /* Space between the icon and the text */
+}
+
+/* Adjust row spacing */
+.contact-details .row {
+    margin-bottom: 15px;    /* Ensure there's spacing between rows */
+}
+
+/* Small screen responsiveness */
+@media (max-width: 768px) {
+    .heading .head1, .heading .head2 {
+        font-size: 1.5rem;  /* Smaller headings for mobile */
+    }
+
+    .contact-box {
+        padding: 20px;      /* Smaller padding for mobile */
+    }
+}
+
+
+/* Container adjustments for portfolio cards */
+.portfolio-body .card {
+    border: none;                  /* Remove card border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better appearance */
+    border-radius: 10px;            /* Rounded corners for the card */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect to lift the card */
+.portfolio-body .card:hover {
+    transform: translateY(-10px);   /* Slight lift on hover */
+}
+
+/* Ensuring all card images have the same height */
+.portfolio-body .card-img-top {
+    height: 370px;                  /* Define a fixed height for images */
+    object-fit: cover;              /* Make sure the image fits the space without distortion */
+    border-top-left-radius: 10px;   /* Round the corners of the top part of the image */
+    border-top-right-radius: 10px;
+}
+
+/* Cards alignment and padding */
+.portfolio-body .row .post {
+    display: flex;
+    justify-content: center;         /* Ensure cards are aligned centrally */
+    align-items: stretch;            /* Stretch cards to have the same height */
+    padding: 10px;                   /* Add some spacing around each card */
+}
+
+/* Adjust badge appearance */
+.badge-pill {
+    font-size: 0.9rem;
+    margin: 2px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .portfolio-body .card-img-top {
+        height: 200px;               /* Adjust image height for smaller screens */
+    }
+}
+/* General card styles */
+.blogpost .card {
+    border: none;                     /* Remove card border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add slight shadow for a better look */
+    border-radius: 10px;              /* Rounded corners for the card */
+}
+
+/* Image uniformity */
+.blogpost .card-img-top {
+    height: 20px;                    /* Set a fixed height for all images */
+    object-fit: cover;                /* Ensure images fit within the space without distortion */
+    border-radius: 10px;              /* Add rounded corners */
+}
+
+/* Card body and text */
+.blogpost .card-body {
+    padding: 20px;                    /* Padding inside the card body */
+}
+
+/* Hover effect for cards */
+.blogpost .card:hover {
+    transform: translateY(-5px);      /* Lift card slightly on hover */
+    transition: transform 0.3s ease;  /* Smooth hover effect */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .blogpost .card-img-top {
+        height: 250px;                /* Reduce height for smaller screens */
+    }
+}
