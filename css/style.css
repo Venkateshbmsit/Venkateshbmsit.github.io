@@ -785,3 +785,26 @@ body {
         height: 250px;                /* Reduce height for smaller screens */
     }
 }
+.blogpost .card {
+    width: 100%; /* Makes the card full width of its column */
+    max-width: 350px; /* Set a maximum width for the cards */
+    height: 100%; /* Make the card take full height */
+    display: flex;
+    flex-direction: column; /* Allows for better spacing of contents */
+  }
+  
+  .blogpost .card-img-top {
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+  
+  .blogpost .card-body {
+    flex-grow: 1; /* Allows the body to take up the remaining space */
+    display: flex;
+    flex-direction: column; /* Aligns contents vertically */
+  }
+  
+  .blogpost .read-more-btn {
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+  }
+  
