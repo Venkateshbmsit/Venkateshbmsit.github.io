@@ -89,7 +89,7 @@ Feel free to reach out to me via:
 Email:venkateshkulkarni8951@gmail.com
 
 
-Thank you for visiting my portfolio! ✨
+                                                            --Thank you for visiting my portfolio! ✨--
 
 
 📌 Future Improvements
