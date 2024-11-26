@@ -858,4 +858,33 @@ body {
   .carousel-item {
     text-align: center; /* Center text within carousel items */
   }
+  .certificates .certificate-item {
+    padding: 10px;
+  }
+  
+  .certificates img {
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .certificates img:hover {
+    transform: scale(1.05);
+  }
+  
+  .certificates h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .carousel-inner {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+  }
   
