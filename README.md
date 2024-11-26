@@ -10,7 +10,6 @@ Welcome to my portfolio! This project showcases my journey as a passionate **Sof
 This is my personal portfolio website where you can explore:
 
 - 🖥️ **Projects**: A showcase of my key projects with links to live demos and GitHub repositories.
-- 📜 **Certifications**: A gallery of my technical certifications earned over the years.
 - 🛠️ **Skills**: Visual representation of the tools and technologies I work with.
 - 👨‍💻 **About Me**: A brief introduction and my career objectives as a software developer.
 
@@ -53,12 +52,6 @@ The portfolio website is divided into the following categories:
   - Project descriptions
   - Links to live demos or GitHub repositories for each project
   - Technologies used in each project
-
-### 5. **Certifications** 📜
-- A gallery of certificates that I have earned, including:
-  - **Certified JavaScript Developer**
-  - **SQL Basic Certification**
-  - **Postman API Fundamentals**
   
 - A button that opens a modal to view all certificates with images of each.
 
@@ -93,10 +86,9 @@ Check out the live version of my portfolio here: Venkatesh R K Portfolio
 👨‍💻 Contact
 Feel free to reach out to me via:
 
-Email:venkateshkulkarni8951@gmail.com
+                                                            Email:venkateshkulkarni8951@gmail.com
 
-
-Thank you for visiting my portfolio! ✨
+--Thank you for visiting my portfolio! ✨--
 
 
 📌 Future Improvements
