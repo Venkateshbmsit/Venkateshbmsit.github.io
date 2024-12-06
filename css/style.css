@@ -887,4 +887,30 @@ body {
     background-color: #333;
     border-radius: 50%;
   }
-  
+ 
+  #myBtnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .filter-item {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #007BFF;
+    background-color: #ffffff;
+    color: #007BFF;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .filter-item:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+  }
+
+  .filter-item i {
+    margin-right: 8px;
+  }
