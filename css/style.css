@@ -888,7 +888,7 @@ body {
     border-radius: 50%;
   }
  
-  #myBtnContainer {
+  .myBtnContainer {
     display: flex;
     justify-content: center;
     gap: 10px;
